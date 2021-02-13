@@ -11,4 +11,9 @@
       - GOPATH는 ~/.zprofile에서 기존 경로를 바꿔줄수 있다.
     - 외부에서 패키지 다운방법
       - `go get github.com/mattn/go-sqlite3` 과 같이 입력하면 GOPATH로 지정한 곳에 관련 패키지들을 다운받는다.
-    
+  - 패키지
+    - 패키지는 코드의 모듈화, 코드의 재사용 기능을 제공한다.
+    - "main" 이라 명명된 패키지는 Go Compiler에 의해 특별히 인식되며, executable 프로그램으로 만들어준다.
+      - 즉, main 함수안엔 `package main`을 기재해준다.
+    - 패키지를 import를 하면 기본 GOROOT, GOPATH 횐경변수를 검색한다.
+      - `GOROOT/pkg`, `GOPATH/pkg`
