@@ -1,7 +1,7 @@
 package main
 
 import (
-	"testlib"
+	"github.com/JaeGeunBang/go_tutorial/testlib"
 )
 
 func main() {
